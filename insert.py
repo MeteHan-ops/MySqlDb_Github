@@ -1,5 +1,5 @@
 import mysql.connector
-from connect import connection,mycursor
+from connection import connection,mycursor
 def insertProduct(list):
     sql = "INSERT INTO sqltable(\
             Name,Surname,Note_1,Note_2,Final_Note,Photo,Description)\

@@ -1,4 +1,3 @@
-from django.db import connection
 import mysql.connector
 
 connection = mysql.connector.connect(
@@ -9,4 +8,6 @@ connection = mysql.connector.connect(
 )
 
 mycursor = connection.cursor()
+
+
 
