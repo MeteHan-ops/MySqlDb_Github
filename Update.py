@@ -2,7 +2,7 @@ import mysql.connector
 from connection import connection,mycursor
 
 def updateProduct(name,surname,id):
-    sql = "Update sqltable Set Name='Osman', Surname ='tokkıran' where photo = '3.jpg'"
+    sql = f"Update sqltable Set Name='{name}', Surname ='{surname}' where id = '{id}'"
 
     mycursor.execute(sql)
     try:
@@ -21,5 +21,3 @@ def Menü():
     surname  = input("surname")
     updateProduct(name,surname,id)
      
-
-updateProduct("Osman","Tokkıran",8)
